@@ -1,0 +1,61 @@
+.branches
+    margin-bottom: 150px
+    &__title
+        font-weight: 700
+        font-size: 50px
+        line-height: 130%
+        color: $black
+        margin: 70px 0px
+        text-align: center
+.branches-content
+    padding: 70px 0
+    background: $gray
+    text-align: center
+    border-radius: 10px
+    &__buttons
+        margin-bottom: 40px
+    &__pagination
+        display: none
+
+.branches-list
+    display: flex
+    justify-content: space-around
+    &__item
+        font-weight: 700
+        font-size: 20px
+        line-height: 130%
+        &::before
+            content: ""
+            background-image: url(../avtoshkola/img/point-big.svg)
+            display: block
+            margin-right: 10px
+            width: 24px
+            height: 33px
+            margin-left: 40%
+            margin-bottom: 14px
+
+@media screen and (max-width: 1700px)
+        .branches
+            margin-bottom: 26px
+            background-color: $gray
+            &__title
+              font-size: 25px
+              text-align: left
+              margin-top: 0
+              margin-bottom: 0
+              padding-top: 66px
+        .branches-content
+            padding-bottom: 40px
+            &__pagination
+                display: block
+            &__buttons
+                display: flex
+                flex-direction: column
+        .btn-white
+            margin-left: 0
+            margin-top: 20px
+        .branches-list
+            &__item-mobile
+                display: none
+                
+

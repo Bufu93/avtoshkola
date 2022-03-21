@@ -1,0 +1,166 @@
+.instructors
+    display: flex
+    margin-bottom: 150px
+    &__gallery
+        position: relative
+.instructors-content
+    &__title
+        background-color: $green
+        color: $white
+        font-weight: 700
+        font-size: 50px
+        line-height: 130%
+        max-width: 363px
+        padding: 40px 17px 40px 315px
+        margin: 0
+    &__block-top
+        display: flex
+        margin-bottom: 70px
+    &__block-bottom
+        padding-left: 315px
+        padding-right: 30px
+        
+.block-bottom
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 140%
+        color: $light-black
+        max-width: 650px
+
+.about-instructor-mobile
+    display: none
+
+.about-instructor
+    padding: 40px 20px
+    background-color: $gray
+    text-align: center
+    min-width: 240px
+    &__name
+        font-weight: 700
+        font-size: 20px
+        line-height: 130%
+        color: $black
+    &__info
+        font-weight: 400
+        font-size: 16px
+        line-height: 140%
+        color: $light-black
+
+.gallery-list
+    display: flex
+    align-items: top
+    z-index: 1
+    &__item
+        margin-left: 30px
+        z-index: 3
+    &__item:nth-child(1)
+        margin-left: 0
+
+.gallery-panel
+    background-color: $gray
+    width: 646px
+    height: 132px
+    position: absolute
+    right: 15px
+    top: 150px
+    z-index: 1
+    display: flex
+    align-items: flex-end
+    padding-bottom: 18px
+    &__pagination
+        margin-left: 32px
+        
+.arrows
+    margin-left: 150px
+    &__left, &__right
+        padding: 0
+    &__right
+        margin-left: 20px
+
+.pagination
+    &__black
+        display: flex
+        align-items: center
+        font-weight: 700
+        font-size: 20px
+        line-height: 130%
+        color: $black
+    &__red
+        font-weight: 700
+        font-size: 30px
+        line-height: 130%
+        color: $red
+
+@media screen and (max-width: 1700px)
+    .instructors
+        margin-bottom: 0 
+        flex-direction: column
+    .instructors-content
+        display: flex
+        flex-direction: column
+        padding-left: 15px
+        padding-right: 15px
+        &__block-top
+            margin-bottom: 0
+        &__title
+            padding: 0
+            background-color: $white
+            color: $black
+            font-size: 25px
+    .about-instructor
+        display: none
+    .about-instructor-mobile
+        display: block
+        width: 290px
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        padding-left: 0
+        padding-right: 0
+    .block-bottom
+        padding: 0
+        &__text
+            margin-top: 15px
+            margin-bottom: 40px
+
+    .instructors-gallery
+        display: flex
+        flex-direction: column
+        padding: 0 15px
+    .gallery-list
+        display: flex
+        justify-content: center
+        &__item
+            width: 290px
+            border-radius: 10px
+        &__item-mobile
+            display: none
+    .gallery-panel
+        position: static
+        width: 290px
+        background-color: $white
+        height: 60px
+        &__arrows
+            display: none
+
+    .readmore
+        color: $green
+        font-weight: 600
+        font-size: 16px
+        line-height: 130%
+        &::after
+            content: ""
+            background-image: url(../avtoshkola/img/triangle.svg)
+            display: inline-block
+            margin-left: 5px
+            width: 12px
+            height: 8px
+
+    .readmore-trim
+        display: none
+        
+
+
+
+
+        

@@ -1,0 +1,53 @@
+.footer
+    background-color: $light-black
+    &__footer-bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 145px
+
+.footer-navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 145px
+    margin-bottom: 68px
+    &__link
+        color: $white
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+    &__link:hover
+        text-decoration: underline
+
+.footer-bottom
+    &__text
+        color: #989898
+        font-weight: 400
+        font-size: 15px
+        line-height: 130%
+    &__tel
+        font-weight: 700
+        font-size: 20px
+        line-height: 130%
+        color: $white
+    &__tel--first
+        margin-right: -140px
+    &__tel--first::before
+        content: ""
+        background-image: url(../avtoshkola/img/phone-green.svg)
+        display: inline-block
+        margin-bottom: -6px
+        margin-right: 10px
+        width: 23px
+        height: 23px
+    &__mail
+        color: $green
+        font-weight: 700
+        font-size: 30px
+        line-height: 130%
+
+    .social
+        &__item
+            margin-left: 10px
+

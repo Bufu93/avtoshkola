@@ -1,0 +1,62 @@
+.feedback
+    display: flex
+    &__block-car
+        width: 1372px
+        height: 515px
+        background-color: $green
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__block-form
+        background-color: $gray
+        width: 481px
+        height: 465px
+        align-self: flex-end
+        margin-left: -150px
+
+.form
+    display: flex
+    flex-direction: column
+    min-width: 340px 
+    text-align: left
+    padding: 70px
+    &__title
+        font-weight: 700
+        font-size: 30px
+        line-height: 130%
+        color: $black
+    &__input
+        border: none
+        outline: none
+        border-bottom: 1px solid #989898
+        margin-bottom: 20px
+        background: transparent
+        padding-bottom: 10px
+        box-sizing: content-box
+        color: #2B8E53 
+        &:focus
+            border-bottom: 2px solid #2B8E53 
+    &__checkbox
+        width: 20px
+        height: 20px
+        margin-right: 10px
+    &__label
+        display: flex
+        font-weight: 600
+        font-size: 13px
+        line-height: 130% 
+        align-items: center
+        & a
+            color: $green 
+
+
+.block-car
+    &__title
+        font-weight: 700
+        font-size: 50px
+        line-height: 130%
+        color: $white
+
+.btn-feedback
+    width: 200px
+    margin-top: 40px

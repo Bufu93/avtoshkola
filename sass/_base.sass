@@ -1,0 +1,46 @@
+body
+    margin: 0 auto
+    max-width: 1920px
+    width: 100%
+    font-family: 'Inter', sans-serif
+
+.container
+    max-width: 1288px
+    margin: 0 auto
+
+a
+    text-decoration: none
+
+.btn
+    padding: 15px 28px
+    border: none
+    border-radius: 10px
+    cursor: pointer
+    font-weight: 700
+    font-size: 16px
+    line-height: 19px
+    color: $white
+
+.btn-red
+    background-color: $red
+    &:hover
+        background-color: $redhover
+        transition: all 0.3s ease
+
+.btn-white
+    color: $black
+    background-color: $white
+
+.active-green
+    background-color: $green
+    color: $white
+.btn-branches
+    padding: 15px 54px
+    margin-left: 30px
+
+@media screen and (max-width: 1700px)
+        body
+            min-width: 320px
+        .container
+            padding-left: 15px
+            padding-right: 15px
