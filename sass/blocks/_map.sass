@@ -1,8 +1,61 @@
 .map
     margin-bottom: 150px
+    position: relative
     &__title
         font-weight: 700
         font-size: 50px
         line-height: 130%
         color: $black
         text-align: center
+.map-points
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1)
+    border-radius: 10px
+    padding: 30px
+    max-width: 290px
+    height: 323px
+    &__title
+        margin-top: 0
+        font-weight: 700
+        font-size: 20px
+        line-height: 130%
+        color: $black
+    &__item
+        padding: 20px 0
+    &__link
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        color: $green
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: $light-black
+    &__link--plan
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        color: $black
+
+.map-points
+    position: absolute
+    right: 150px
+    top: 150px
+    background-color: $white
+    padding-bottom: 0
+.hr
+    border-bottom: 1px solid #DADADA
+    
+
+
+@media screen and (max-width: 1700px)
+    .map
+        margin-bottom: 61px
+        padding: 0
+        &__addres
+            margin: 0
+        &__title
+            font-size: 25px
+            text-align: left
+    .map-points
+        position: static

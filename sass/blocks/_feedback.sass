@@ -60,3 +60,30 @@
 .btn-feedback
     width: 200px
     margin-top: 40px
+
+@media screen and (max-width: 1700px)
+    .feedback
+        flex-direction: column
+        &__block-car
+            max-width: 320px
+        &__block-form
+            width: 320px
+            align-self: flex-start
+            margin-left: 0
+            box-sizing: border-box
+    .form
+        min-width: 260px
+        padding: 30px 20px
+        &__title
+            font-size: 18px
+
+    .block-car
+        height: 355px
+        justify-content: center
+        &__img
+            width: 290px
+            height: 115px
+        &__title
+            font-size: 25px
+    .btn-feedback
+        width: 100%

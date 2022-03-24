@@ -33,7 +33,7 @@
         color: $white
     &__tel--first
         margin-right: -140px
-    &__tel--first::before
+    &__tel::before
         content: ""
         background-image: url(../avtoshkola/img/phone-green.svg)
         display: inline-block
@@ -50,4 +50,39 @@
     .social
         &__item
             margin-left: 10px
+.footer-logo-mobile
+    display: none
 
+.active
+    
+
+@media screen and (max-width: 1700px)
+    .footer-logo
+        display: none
+    .footer-logo-mobile
+        display: block
+        padding-top: 40px
+    .footer
+        padding: 0 15px
+    .footer-navbar
+        padding: 0px
+        flex-wrap: wrap
+        flex-direction: column
+        max-height: 180px
+        margin-bottom: 40px
+        margin-top: 30px
+        align-items: flex-start
+        &__link
+            margin-bottom: 20px
+    .footer-bottom
+        flex-direction: column-reverse
+        align-items: flex-start
+        &__mail
+            order: -1
+            font-size: 20px
+            margin-bottom:40px
+            margin-top:40px
+        &__text
+            order: -1
+    .social
+        margin-bottom: 40px
